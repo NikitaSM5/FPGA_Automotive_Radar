@@ -20,6 +20,6 @@ CMakeLists.txt.user*
 /.qmake.stash
 /icons
 *.pro.user
-/History
-/_Previews
+/Altium design/History
+/Altium design/_Previews
 debug.log

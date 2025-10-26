@@ -7,7 +7,7 @@ Shape Version=11.00
 Screen=1920,1080
 MCAPVersion=12.2.0.5
 Key ID=Demo
-NLCnt=112
+NLCnt=90
 TXCnt=4
 
 [shapedef]
@@ -275,7 +275,7 @@ PowerFormat=3
 PathDelayFormat=3
 WarningFormat=3
 GridTextFormulaFormat=3
-Window Placement in Transient Analysis=2,3, -1,-1, -9,-36, -4,0,847,610
+Window Placement in Transient Analysis=2,3, -1,-1, -9,-36, -4,0,847,585
 SpiceType=AMBIGUOUS
 Title_Block_Border=None
 Title_Block=False
@@ -348,7 +348,7 @@ Style=8192
 
 [Attr]
 ON=-40,-30,RESISTANCE
-V=14k
+V=6.496141K
 Style=8192
 
 [Attr]
@@ -373,15 +373,6 @@ Style=8192
 [Attr]
 ON=0,0,PACKAGE
 V
-
-[Wire]
-Pxs=840,520,848,520
-
-[Wire]
-Pxs=848,456,848,520
-
-[Wire]
-Pxs=848,456,864,456
 
 [Wire]
 Pxs=832,456,848,456
@@ -576,149 +567,19 @@ Pxs=840,544,960,544
 Pxs=1192,456,1192,544
 
 [Comp]
-Name=SS14
-Px=328,480
-Rot=7
-
-[Attr]
-ON=-40,20,PART
-V=D8
-Style=8192
-
-[Attr]
-ON=-63,43,MODEL
-V=SS14
-
-[Attr]
-ON=-114,89,PACKAGE
-V=DO-214AC
-
-[Comp]
-Name=SS14
-Px=328,544
-Rot=7
-
-[Attr]
-ON=-40,20,PART
-V=D9
-Style=8192
-
-[Attr]
-ON=-63,43,MODEL
-V=SS14
-
-[Attr]
-ON=-114,89,PACKAGE
-V=DO-214AC
-
-[Comp]
-Name=SS14
-Px=408,480
-Rot=7
-
-[Attr]
-ON=-40,20,PART
-V=D3
-Style=8192
-
-[Attr]
-ON=-63,43,MODEL
-V=SS14
-
-[Attr]
-ON=-114,89,PACKAGE
-V=DO-214AC
-
-[Comp]
-Name=SS14
-Px=408,544
-Rot=7
-
-[Attr]
-ON=-40,20,PART
-V=D4
-Style=8192
-
-[Attr]
-ON=-63,43,MODEL
-V=SS14
-
-[Attr]
-ON=-114,89,PACKAGE
-V=DO-214AC
-
-[Wire]
-Pxs=328,528,328,536
-
-[Wire]
-Pxs=408,528,408,536
-
-[Wire]
-Pxs=328,592,328,616
-
-[Wire]
-Pxs=328,616,368,616
-
-[Wire]
-Pxs=408,592,408,616
-
-[Wire]
-Pxs=328,464,328,480
-
-[Wire]
-Pxs=328,464,408,464
-
-[Wire]
-Pxs=408,464,408,480
-
-[Wire]
-Pxs=200,536,328,536
-
-[Wire]
-Pxs=328,536,328,544
-
-[Wire]
-Pxs=368,536,408,536
-
-[Wire]
-Pxs=408,536,408,544
-
-[Wire]
-Pxs=368,616,408,616
-
-[Wire]
-Pxs=368,616,368,656
-
-[Comp]
 Name=Ground
-Px=368,656
+Px=464,584
 Rot=7
 
 [Wire]
-Pxs=408,464,512,464
+Pxs=464,520,464,536
 
 [Wire]
-Pxs=512,464,512,520
-
-[Comp]
-Name=Ground
-Px=368,536
-Rot=7
-
-[Comp]
-Name=Ground
-Px=152,600
-Rot=7
-
-[Wire]
-Pxs=152,536,152,552
-
-[Wire]
-Pxs=152,536,200,536
+Pxs=464,520,512,520
 
 [Comp]
 Name=Battery
-Px=152,600
+Px=464,584
 Rot=3
 
 [Attr]
@@ -1052,6 +913,15 @@ Pxs=2392,552,2432,552
 [Wire]
 Pxs=2432,552,2448,552
 
+[Wire]
+Pxs=840,520,848,520
+
+[Wire]
+Pxs=848,456,848,520
+
+[Wire]
+Pxs=848,456,864,456
+
 [Grid Text]
 Text="out_dc_dc"
 Px=1264,544
@@ -1062,7 +932,7 @@ CBorder=None
 
 [Grid Text]
 Text="in"
-Px=200,536
+Px=512,520
 GridSnap=True
 JustifyH=Left
 JustifyV=Bottom
@@ -1092,7 +962,7 @@ CurrentSection 3=0
 Splitter.xs=0
 Splitter.ys=0
 TextQuad=4099
-Scale=1.3333333333333333
+Scale=0.66666666666666663
 GridType=GraphPaper
 GridUser=10
 ShapeGroups="Main","Euro","Polarity","Main1","Main11","Electrolytic","GroundArrow","DeMorgan"
@@ -1281,9 +1151,9 @@ PrinterScale=1
 Scale 0=1
 Scale 1=1
 Scale 2=1
-SB 3=195,269
-Scale 3=1.3333333333333333
-Px=1488,743
+SB 3=321,394
+Scale 3=0.66666666666666663
+Px=638,629
 WinBackGround Color=#FFFFFF
 Select Color=#FF0000
 Anchor Color=#000000
@@ -1375,8 +1245,8 @@ Search Color=#FFFF00
 [Text Area]
 Section=0
 Page=1
-Text=.OPTIONS ITL1=250                  
-Text=.OPTIONS PIVREL=1                  
+Text=.OPTIONS ITL1=250                            
+Text=.OPTIONS PIVREL=1                            
 Text=.OPTIONS ITL4=50
 
 [Text Area]
@@ -1533,7 +1403,7 @@ SimulationLog=True
 
 [Transient]
 WinID=1
-Window Placement=2,3, -1,-1, -9,-36, -4,0,847,610
+Window Placement=2,3, -1,-1, -9,-36, -4,0,847,585
 Font=Height=-22,FStyle=0,Color=#0000FF,Name=Arial
 WinBackGround Color=#FFFFFF
 Select Color=#FF0000
@@ -1768,9 +1638,9 @@ Seed=0
 
 [Limits]
 Analysis=Transient
-TMax=5m
+TMax=2.88m
 TStart=0
-TStep=1u
+TStep=20u
 NPts=51
 Temp=27
 RetraceRuns=1
@@ -1786,11 +1656,11 @@ Plt=1
 AliasID=1
 XExp=T
 YExp=v(out_dc_dc)
-XRng=0.005
-YRng=7.5
+XRng=0.00288
+YRng=8
 Options=LINEARX,LINEARY
-Range Grid X=0.001
-Range Grid Y=1.5
+Range Grid X=0.000576
+Range Grid Y=1.6
 Enable=Enable
 Line Color=#0000FF
 Text Color=#0000FF
@@ -1812,12 +1682,12 @@ Plt=2
 AliasID=2
 XExp=T
 YExp=v(in)
-XRng=0.005
+XRng=0.0006
 YRng=30,5
 Options=LINEARX,LINEARY
-Range Grid X=0.001
+Range Grid X=0.00012
 Range Grid Y=5
-Enable=Enable
+Enable=DontRun
 Line Color=#FF0000
 Text Color=#FF0000
 Rainbow=False
@@ -1838,12 +1708,12 @@ Plt=3
 AliasID=3
 XExp=T
 YExp=v(out_ldo33)
-XRng=0.005
-YRng=4.8,-1.2
+XRng=0.0006
+YRng=0.3,-1.2
 Options=LINEARX,LINEARY
-Range Grid X=0.001
-Range Grid Y=1.2
-Enable=Enable
+Range Grid X=0.00012
+Range Grid Y=0.3
+Enable=DontRun
 Line Color=#008000
 Text Color=#008000
 Rainbow=False
@@ -1864,12 +1734,12 @@ Plt=4
 AliasID=4
 XExp=T
 YExp=v(out_ldo12)
-XRng=0.005
+XRng=0.0006
 YRng=1.5
 Options=LINEARX,LINEARY
-Range Grid X=0.001
+Range Grid X=0.00012
 Range Grid Y=0.3
-Enable=Enable
+Enable=DontRun
 Line Color=#FF00FF
 Text Color=#FF00FF
 Rainbow=False
@@ -1917,12 +1787,12 @@ Analysis=Stability
 Analysis=Transient
 Format=6
 Find[0]=R2
-Low[0]=13k
+Low[0]=1k
 Initial[0]=14K
-High[0]=20k
+High[0]=30k
 ThatCnt=10
 That[0]=Equates
-Function[0]=Peak_Y(v(out),1,1)
+Function[0]=Valley_Y(v(out_dc_dc),1,1)
 To[0]=5
 POWELL_TOL=1e-4
 POWELL_RelPercentTol=.1
@@ -1945,9 +1815,9 @@ Method=LM
 Method=DE
 Update_Plot=True
 Minimize_Plot=False
-StartWith=Existing
+StartWith=Random
 GridSize=4
-NumberOfTrys=10
+NumberOfTrys=5
 Log=False
 Show Log=False
 
